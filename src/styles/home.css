@@ -1,0 +1,54 @@
+body{
+
+    background-color: #272727
+}
+
+.container {
+    max-width: 2200px;
+  }
+  
+  .card {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #f2f2f2;
+    padding: 15px;
+    position: relative; /* Añade posición relativa para poder posicionar la imagen de perfil */
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .details {
+    flex: 1;
+
+    margin-left: 150px; 
+  }
+  
+  .profile {
+    display: flex;
+    align-items: center;
+    position: absolute; /* Posiciona la imagen de perfil de forma absoluta */
+    left: 15px; /* Ajusta la posición a la izquierda del card */
+    top: 50%; /* Centra verticalmente la imagen de perfil */
+    transform: translateY(-50%); /* Centra verticalmente la imagen de perfil */
+  }
+  
+  .profile img {
+    width: 100px; /* Ajusta el tamaño de la imagen según tus necesidades */
+    height: 100px; /* Ajusta el tamaño de la imagen según tus necesidades */
+    object-fit: cover;
+    border-radius: 50%; /* Para hacer que la imagen sea redonda */
+  }
+  
+  .button-container {
+    margin-top: auto; /* Mueve el contenedor de botones hacia la parte inferior */
+    display: flex;
+    justify-content: flex-end; /* Alinea los botones a la derecha */
+  }
+  
+  .button-container button {
+    margin-left: 10px; /* Agrega un espacio entre los botones */
+  }
+  
